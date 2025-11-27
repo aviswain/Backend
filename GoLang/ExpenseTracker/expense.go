@@ -1,8 +1,8 @@
 package main
 
 type Expense struct {
-	ID          int     
-	Date        string  
-	Description string  
-	Amount      float64 
+	ID          int     `json:"id"`
+	Date        string  `json:"date"`
+	Description string  `json:"description"`
+	Amount      float64 `json:"amount"`
 }
