@@ -1,9 +1,11 @@
-const dataFile = "expenses.json"
+package main
 
 import (
-    "encoding/json"
-    "os"
+	"encoding/json"
+	"os"
 )
+
+const dataFile = "expenses.json"
 
 func loadExpenses() []Expense {
     data, err := os.ReadFile(dataFile)
